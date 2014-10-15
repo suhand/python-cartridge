@@ -1,4 +1,2 @@
-python-cartridge
-================
-
-Python Cartridge for Apache Stratos
+stratos-docker-php-image
+========================
