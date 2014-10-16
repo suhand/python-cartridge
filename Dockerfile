@@ -79,7 +79,6 @@ RUN locale-gen en_US.UTF-8
 
 EXPOSE 22
 EXPOSE 80
-EXPOSE 8101
 
 ENTRYPOINT /usr/local/bin/run_scripts.sh | /usr/sbin/sshd -D
 
