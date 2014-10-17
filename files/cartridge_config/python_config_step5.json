@@ -1,0 +1,57 @@
+{
+      "type": "python",
+      "provider": "python",
+      "host": "dev.stratos.org",
+      "defaultAutoscalingPolicy": "economyPolicy",
+      "defaultDeploymentPolicy": "python-openstack",
+      "displayName": "Python",
+      "description": "Python Cartridge",
+      "version": "2.7",
+      "multiTenant": "false",
+      "portMapping": [
+         {
+            "protocol": "http",
+            "port": "5000"
+         }
+       ],
+      "deployment": {},
+       "iaasProvider": [
+        {
+          "type": "openstack",
+          "imageId": "RegionOne/6928bced-c4a8-4a2f-8db9-4b55ec340ecb",
+          "maxInstanceLimit": "1",
+          "property": [
+            {
+             "name": "instanceType",
+             "value": "RegionOne/2"
+            },
+	    	{
+            "name": "keyPair",
+            "value": "demo"
+            },
+	   {
+            "name": "securityGroups",
+            "value": "open-all"
+           }
+          ]
+        }
+      ],
+   "property":[
+        {
+            "name":"payload_parameter.MB_IP",
+            "value":"192.168.57.30"
+        },
+        {
+            "name":"payload_parameter.MB_PORT",
+            "value":"61616"
+        },
+        {
+            "name":"payload_parameter.CEP_IP",
+            "value":"172.17.42.1"
+        },
+        {
+            "name":"payload_parameter.CEP_PORT",
+            "value":"7613"
+        }
+    ]
+}
