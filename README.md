@@ -1,2 +1,2 @@
-stratos-docker-php-image
+stratos-docker-python-image
 ========================
